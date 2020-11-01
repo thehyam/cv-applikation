@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/sass.css">
+    <title>Gulp Project</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbarNav">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="#" class="logo">Gulp Project
+                </a>
+                <div id="myLinks">
+                    <a href="index.html" >CV</a>
+                    <a href="login.html" class="active">Login</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="startImg center">
+            <div class="flex-container mainContent">
+                <div id="box1">
+                    <h2>Your details</h2>
+                    <form>
+                        <label id="login_msg"></label><br><br>
+                        <input type="text" name="uname" id="uname" placeholder="username" required maxlength="10"><br><br>
+                        <input type="password" name="pword" id="pword" placeholder="password" required maxlength="10"><br> <br>
+        
+                        <!-- <input type="text" name="login_token" id="login_token"> <br><br> -->
+                        <input type="hidden" name="login_token" id="login_token"> 
+        
+                        <input type="button" name="login_btn" id="login_btn" value="Login">
+        
+                        <br><br>
+        
+                    </form>
+                </div>
+                <div id="box2" class="intro">
+                   
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="flex-container">
+            
+
+            <div>
+                <h2>Contact</h2>
+                <p>Emma-Sofia
+                </p>
+            </div>
+            <div class="footerLogo"></div>
+            <div>
+                <h2>Find Something</h2>
+                <input type="text" placeholder="Search..">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

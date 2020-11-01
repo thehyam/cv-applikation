@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/sass.css">
+    <title>Gulp Project</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbarNav">
+            
+            <div class="topnav">
+                <a href="#" class="logo">Gulp Project
+                </a>
+                <div id="myLinks">
+                    <a href="index.html">CV</a>
+                    <a href="login.html" class="active">Login</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="startImg center">
+            <div class="flex-container mainContent">
+                <div id="box1">
+                    <img src="images/emmaingenbackgrund-small.png" class="responsive" alt="Girl Smiling">
+                </div>
+                <div id="box2" class="intro">
+                    <h1>Emma</h1>
+                    <p>Working in Digital Marketing I have watched my skills in web development further and bridged a knowledge gap. Creating websites that are optimised for search and user experience is really where I have found my passion. 
+
+                    </p>
+                    <p>With my technical background I have a unique skillset in working with SEO. Although I have had my area of responsibility content, I have always had the easiest with technical. Having a skillset in programming language, such as JavaScript, makes implementation of code snippets undemanding, Consequently, I have a deep understanding on all the major pillars of SEO. 
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+       
+        <div class="flex-container mainContent" id="crud_box">
+            <div class="education">
+                   
+                <input type="hidden" name="login_tokenx" id="login_tokenx" readonly="readonly"> 
+
+                <h3>Education</h3>
+                <p>Change information about education, ADD, DELETE, EDIT 
+                </p>
+
+                <hr>
+
+                <h4>Add Record</h4>
+                <p id="edu_create_msg"></p> <br><br>   
+                   
+                Program
+                <input type="text" name="edu_progx" id="edu_progx" required maxlength="50"><br><br>
+
+                University
+                <input type="text" name="edu_unix" id="edu_unix" required maxlength="50"><br><br>
+
+                Degree
+                <input type="text" name="edu_degx" id="edu_degx" required maxlength="50"><br><br>
+
+                Start Date
+                <input type="text" name="edu_yearx" id="edu_yearx" required maxlength="20"><br><br>
+
+                End Date
+                <input type="text" name="edu_end_datex" id="edu_end_datex" required maxlength="20"><br><br>
+
+                Description <br>
+                <textarea name="edu_descx" id="edu_descx" rows="3" cols="15" required maxlength="500"></textarea>
+
+                <br><br>
+                <input type="button" name="edu_add_btn" id="edu_add_btn" value="Add">
+
+                <hr>
+
+                <h4>Update and Delete Record</h4>
+                
+                <p id="edu_delete_msg"></p><br>
+
+                <p id="edu_view_box"></p>
+
+
+                <div id="edit_edu_box">
+                    <hr>    
+                    <h4>Edit Record</h4>
+                    <p id="edu_update_msg"></p> <br> <br>
+                    
+                    Program
+                    <input type="text" name="edu_prog" id="edu_prog" required maxlength="50"><br><br>
+
+                    University
+                    <input type="text" name="edu_uni" id="edu_uni" required maxlength="50"><br><br>
+
+                    Degree
+                    <input type="text" name="edu_deg" id="edu_deg" required maxlength="50"><br><br>
+
+                    Start Date
+                    <input type="text" name="edu_year" id="edu_year" required maxlength="20"><br><br>
+
+                    End Date
+                    <input type="text" name="edu_end_date" id="edu_end_date" required maxlength="20"><br><br>
+
+                    Description <br>
+                    <textarea name="edu_desc" id="edu_desc" rows="3" cols="15" required maxlength="500"></textarea>
+
+                    <br><br>
+                    ID
+                    <input type="text" name="edu_id" id="edu_id" readonly="readonly"><br><br>
+
+                    <input type="button" name="edu_update_btn" id="edu_update_btn" value="Update">
+
+                </div>
+
+                <hr>
+
+                <h3>Websites</h3>
+                <p>Change information about websites, ADD, DELETE, EDIT </p>
+                <hr>
+
+                <h4>Add Record</h4>
+                <p id="web_create_msg"></p> <br><br>   
+                   
+                Website
+                <input type="text" name="web_websitex" id="web_websitex" required maxlength="50"><br><br>
+
+                URL
+                <input type="text" name="web_urlx" id="web_urlx" required maxlength="200"><br><br>
+
+                
+
+                Description <br>
+                <textarea name="web_descx" id="web_descx" rows="3" cols="15" required maxlength="50"></textarea>
+
+                <br><br>
+                <input type="button" name="web_add_btn" id="web_add_btn" value="Add">
+
+                <hr>
+
+                <h4>Update and Delete Record</h4>
+                
+                <p id="web_delete_msg"></p><br>
+
+                <p id="web_view_box"> </p>
+
+
+                <div id="edit_web_box">
+                    <hr>    
+                    <h4>Edit Record</h4>
+                    <p id="web_update_msg"></p> <br> <br>
+                    
+                    Website
+                    <input type="text" name="web_website" id="web_website" required maxlength="50"><br><br>
+
+                    URL
+                    <input type="text" name="web_url" id="web_url" required maxlength="200"><br><br>
+
+                    
+
+                    Description <br>
+                    <textarea name="web_desc" id="web_desc" rows="3" cols="15" required maxlength="50"></textarea>
+                    <br><br>
+
+                    ID
+                    <input type="text" name="web_id" id="web_id" readonly="readonly"><br><br>
+
+                    <input type="button" name="web_update_btn" id="web_update_btn" value="Update">
+
+                </div>
+
+                <hr>
+
+            </div>
+            <div>
+                <h3>Worklife</h3>
+                <p>Change information about worklife, ADD, DELETE, EDIT 
+                </p>
+                
+                <hr>
+                <h4>Add Record</h4>
+                <p id="workx_create_msg"></p> <br><br>    
+                   
+                Title
+                <input type="text" name="work_titlex" id="work_titlex" required maxlength="50"><br><br>
+
+                Company
+                <input type="text" name="work_companyx" id="work_companyx" required maxlength="50"><br><br>
+                
+                Start Date
+                <input type="text" name="work_start_datex" id="work_start_datex" required maxlength="20"><br><br>
+
+                End Date
+                <input type="text" name="work_end_datex" id="work_end_datex" required maxlength="20"><br><br>
+
+
+                <br><br>
+                <input type="button" name="work_add_btn" id="work_add_btn" value="Add">
+
+                <hr>
+
+                <h4>Update and Delete Record</h4>
+                
+                <p id="work_delete_msg"></p><br>
+
+                <p id="work_view_box"> </p>
+
+
+                <div id="edit_work_box">
+                    <hr>    
+                    <h4>Edit Record</h4>
+                    <p id="work_update_msg"></p> <br> <br>
+                    
+                    Title
+                    <input type="text" name="work_title" id="work_title" required maxlength="50"><br><br>
+
+                    Company
+                    <input type="text" name="work_company" id="work_company" required maxlength="50"><br><br>
+                    
+                    Start Date
+                    <input type="text" name="work_start_date" id="work_start_date" required maxlength="20"><br><br>
+
+                    End Date
+                    <input type="text" name="work_end_date" id="work_end_date" required maxlength="20"><br><br>
+
+
+                    ID
+                    <input type="text" name="work_id" id="work_id" readonly="readonly"><br><br>
+
+
+                    <input type="button" name="work_update_btn" id="work_update_btn" value="Update">
+
+                </div>
+
+                <hr>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="flex-container">
+            
+
+            <div>
+                <h2>Contact</h2>
+                <p>Emma-Sofia Hallin 
+                </p>
+                <p>emha1904@student.miun.se</p>
+            </div>
+            <div class="footerLogo"></div>
+            <div>
+                <h2>Find Something</h2>
+                <input type="text" placeholder="Search..">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/app_records.js"></script>
+</body>
+
+</html>

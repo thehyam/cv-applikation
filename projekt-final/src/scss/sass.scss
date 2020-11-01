@@ -1,0 +1,39 @@
+//Import
+@import 'colours';
+@import 'layout';
+@import 'mobile';
+@import 'fonts';
+
+.education {
+    border-right-style: solid;
+    border-width: 0.5px;
+}
+.crud {
+    border-right-style: solid;
+    border-width: 0.5px;
+}
+//Boxed content
+@mixin boxes($circle: false) {
+    padding: 20px;
+    font-family: 'Montserrat';
+    
+    @if $circle {
+        border-radius: 0px;
+    } else {
+        border-radius: 0%;
+    }
+}
+
+#box1 {
+    @include boxes($circle: true);
+}
+#box2 {
+    @include boxes;
+}
+#box3 {
+    @extend #box1;
+}
+// Footer layout 
+.footer h2 {
+color: $darkgreen;
+}
